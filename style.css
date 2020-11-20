@@ -119,10 +119,52 @@ body{
 	height: 100px;
     padding: 0px;
 }
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .bg-light {
+    background: hsl(0, 2%, 10%);
+    color: rgb(230, 215, 215);
+  }
+  
+  .bg-dark {
+    background: rgb(24, 23, 23);
+    color: #f4f4f4;
+  }
  footer {
     padding: 2.2rem;
+    background: grey;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(3fr, 50px); 
   }
+.Address{
+    padding: 12px;
+}
   
   footer p {
     margin: 0;
+    text-align: center;
+      background: black;
   }
